@@ -166,7 +166,7 @@
                 <i class="fas fa-underline" id="underline" title="underline" @click="isUnderline = !isUnderline"></i>
                 <i class="fas fa-sun" id="shadow" title="shadow" @click="isShadow = !isShadow"></i>
                 <i class="fas fa-meh-blank" id="negative" title="negative" @click="isNegative = !isNegative"></i>
-                <i class="fas fa-book" id="alphabet" title="alphabet"></i>
+                <i class="fas fa-book" id="alphabet" title="alphabet" @click="alphabet = !alphabet"></i>
             </fieldset>
             <fieldset>
                 <legend>SIZE</legend>
@@ -179,9 +179,9 @@
             </fieldset>
             <br>
         </div>
-        <textarea class="styled-text-area" :class="myClass" :style="{ fontSize: fontSize + 'rem', fontFamily: fontFamily, color: textColor, backgroundColor : backgroundColor}">Texte</textarea>
+        <textarea v-if="alphabet" class="styled-text-area" :class="myClass" :style="{ fontSize: fontSize + 'rem', fontFamily: fontFamily, color: textColor, backgroundColor : backgroundColor}" v-model="textContent">AZERTY azerty \r123456 &#?!$%</textarea>
+        <textarea v-else class="styled-text-area" :class="myClass" :style="{ fontSize: fontSize + 'rem', fontFamily: fontFamily, color: textColor, backgroundColor : backgroundColor}" v-model="textContent">{{ textContent }}</textarea>
     </div>
-
     <script src="https://kit.fontawesome.com/8cb3d4ca6a.js" async></script>
     <script src="js/main.js"></script>
 </body>

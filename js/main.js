@@ -9,7 +9,9 @@
             fontSize: 4,
             fontFamily: "",
             textColor: "black",
-            backgroundColor: "white"
+            backgroundColor: "white",
+            alphabet: false,
+            textContent: "Texte"
         },
         computed: {
             myClass: function() {
@@ -25,12 +27,4 @@
         }
     })
 
-
-const styledTextArea = document.getElementsByClassName('styled-text-area')[0],
-    alphabet = document.getElementById('alphabet')
-
-
-alphabet.addEventListener('click', function() {
-    styledTextArea.textContent = "AZERTY azerty \r123456 &#?!$%";
-});
 
