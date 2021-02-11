@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Font Selector</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
             <fieldset>
                 <legend>FONTE</legend>
                 <select class="artists-menu" v-model="fontFamily">
-                    <option disabled selected>Artists</option>
+                    <option value="" disabled selected>Artists</option>
                     <option value="David-Regular">David Bowie ⍟</option>
                     <option value="John-Regular">John Lennon</option>
                     <option value="Kurt-Regular">Kurt Cobain ⍟</option>
@@ -25,7 +25,7 @@
                     <option value="Serge-Regular">Serge Gainsbourg ⍟</option>
                 </select>
                 <select class="circus-menu" v-model="fontFamily">
-                    <option selected disabled>Circus</option>
+                    <option value="" selected disabled>Circus</option>
                     <option value="Carnival Rimmed">Carnival Rimmed (Caps) ⍟</option>
                     <option value="Carnivalee Freakshow">Carnivalee Freakshow ⍟</option>
                     <option value="Circus">Circus ⍟</option>
@@ -37,7 +37,7 @@
                     <option value="Pentagon">Pentagon</option>
                 </select>
                 <select class="horror-menu" v-model="fontFamily">
-                    <option selected disabled>Horror</option>
+                    <option value="" selected disabled>Horror</option>
                     <optgroup label="Gothic">
                         <option value="CloisterBlack">Cloister Black</option>
                         <option value="Deutsch Gothic">Deutsch Gothic ⍟</option>
@@ -70,7 +70,7 @@
                     </optgroup>
                 </select>
                 <select class="pirates-menu" v-model="fontFamily">
-                    <option selected disabled>Pirates</option>
+                    <option value="" selected disabled>Pirates</option>
                     <option value="Aquiline">Aquiline ⍟</option>
                     <option value="Blackpearl">Blackpearl ⍟</option>
                     <option value="Black Sams Gold">Black Sams Gold ⍟</option>
@@ -78,7 +78,7 @@
                     <option value="TreasureMap">Treasure Map ⍟</option>
                 </select>
                 <select class="western-menu" v-model="fontFamily">
-                    <option selected disabled>Western</option>
+                    <option value="" selected disabled>Western</option>
                     <option value="Anderson Four">Anderson Four</option>
                     <option value="Durango Western">Durango Western ⍟</option>
                     <option value="El Durango">El Durango ⍟</option>
@@ -95,7 +95,7 @@
                     </optgroup>
                 </select>
                 <select class="cinema-menu" v-model="fontFamily">
-                    <option selected disabled>Cinema</option>
+                    <option value="" selected disabled>Cinema</option>
                     <optgroup label="Art Deco">
                         <option value="Deco Pinstripe">Deco Pinstripe ⍟</option>
                         <option value="GangueOuais">Gangue Ouais</option>
@@ -121,7 +121,7 @@
                     </optgroup>
                 </select>
                 <select class="other-menu" v-model="fontFamily">
-                    <option selected disabled>Miscellaneous</option>
+                    <option value="" selected disabled>Miscellaneous</option>
                     <optgroup label="Art Nouveau">
                         <option value="ArtNouveau">Art Nouveau ⍟</option>
                         <option value="ArtNouveau1900">1900 ⍟</option>
@@ -160,7 +160,7 @@
         <div class="flex">
             <fieldset>
                 <legend>TOOLS</legend>
-                <i class="fas fa-not-equal" id="default" title="default" @click="isBold = false, isItalic = false, isUnderline = false, isNegative = false"></i>
+                <i class="fas fa-not-equal" id="default" title="default" @click="isBold = false, isItalic = false, isUnderline = false, isShadow = false, isNegative = false, textColor = 'black', backgroundColor = 'white'"></i>
                 <i class="fas fa-bold" id="bold" title="bold" @click="isBold = !isBold"></i>
                 <i class="fas fa-italic" id="italic" title="italic" @click="isItalic = !isItalic"></i>
                 <i class="fas fa-underline" id="underline" title="underline" @click="isUnderline = !isUnderline"></i>

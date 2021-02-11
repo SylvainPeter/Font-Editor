@@ -1,0 +1,31 @@
+header {
+    height: 100px;
+}
+
+.flex {
+    display: flex;
+    width: 1100px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.shadow {
+    text-shadow: 3px 3px 5px grey;
+}
+
+.negative {
+background-color: black;
+color: white;
+}

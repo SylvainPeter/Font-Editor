@@ -8,8 +8,8 @@
             isNegative: false,
             fontSize: 4,
             fontFamily: "",
-            textColor: "",
-            backgroundColor: ""
+            textColor: "black",
+            backgroundColor: "white"
         },
         computed: {
             myClass: function() {
