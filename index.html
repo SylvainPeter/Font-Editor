@@ -160,13 +160,13 @@
         <div class="flex">
             <fieldset>
                 <legend>TOOLS</legend>
-                <i class="fas fa-not-equal" id="default" title="default" @click="isBold = false, isItalic = false, isUnderline = false, isShadow = false, isNegative = false, textColor = 'black', backgroundColor = 'white'"></i>
-                <i class="fas fa-bold" id="bold" title="bold" @click="isBold = !isBold"></i>
-                <i class="fas fa-italic" id="italic" title="italic" @click="isItalic = !isItalic"></i>
-                <i class="fas fa-underline" id="underline" title="underline" @click="isUnderline = !isUnderline"></i>
-                <i class="fas fa-sun" id="shadow" title="shadow" @click="isShadow = !isShadow"></i>
-                <i class="fas fa-meh-blank" id="negative" title="negative" @click="isNegative = !isNegative"></i>
-                <i class="fas fa-book" id="alphabet" title="alphabet" @click="alphabet = !alphabet"></i>
+                <button class="fas fa-not-equal" id="default" title="default" @click="isBold = false, isItalic = false, isUnderline = false, isShadow = false, isNegative = false, isSepia = false, textColor = 'black', backgroundColor = 'white'"></button>
+                <button class="fas fa-bold" id="bold" title="bold" @click="isBold = !isBold"></button>
+                <button class="fas fa-italic" id="italic" title="italic" @click="isItalic = !isItalic"></button>
+                <button class="fas fa-underline" id="underline" title="underline" @click="isUnderline = !isUnderline"></button>
+                <button class="fas fa-sun" id="shadow" title="shadow" @click="isShadow = !isShadow"></button>
+                <button class="fas fa-meh-blank" id="negative" title="negative" @click="isNegative = !isNegative"></button>
+                <button class="fas fa-camera-retro" id="sepia" title="sepia" @click="isSepia = !isSepia"></button>
             </fieldset>
             <fieldset>
                 <legend>SIZE</legend>
@@ -179,8 +179,8 @@
             </fieldset>
             <br>
         </div>
-        <textarea v-if="alphabet" class="styled-text-area" :class="myClass" :style="{ fontSize: fontSize + 'rem', fontFamily: fontFamily, color: textColor, backgroundColor : backgroundColor}" v-model="textContent">AZERTY azerty \r123456 &#?!$%</textarea>
-        <textarea v-else class="styled-text-area" :class="myClass" :style="{ fontSize: fontSize + 'rem', fontFamily: fontFamily, color: textColor, backgroundColor : backgroundColor}" v-model="textContent">{{ textContent }}</textarea>
+        <textarea class="styled-text-area" :class="myClass" :style="{ fontSize: fontSize + 'rem', fontFamily: fontFamily, color: textColor, backgroundColor : backgroundColor}" v-model="textContent">{{ textContent }}</textarea>
+  
     </div>
     <script src="https://kit.fontawesome.com/8cb3d4ca6a.js" async></script>
     <script src="js/main.js"></script>

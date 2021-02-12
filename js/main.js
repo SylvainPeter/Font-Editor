@@ -6,12 +6,13 @@
             isUnderline: false,
             isShadow: false,
             isNegative: false,
+            isSepia: false,
             fontSize: 4,
             fontFamily: "",
             textColor: "black",
             backgroundColor: "white",
             alphabet: false,
-            textContent: "Texte"
+            textContent: "AZERTY azerty \r123456 &#?!$%"
         },
         computed: {
             myClass: function() {
@@ -20,7 +21,8 @@
                     italic: this.isItalic,
                     underline: this.isUnderline,
                     shadow: this.isShadow,
-                    negative: this.isNegative
+                    negative: this.isNegative,
+                    sepia: this.isSepia
                 }
             }
 
