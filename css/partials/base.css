@@ -4,6 +4,10 @@ header {
 body {
   background-color: #f0faf9; }
 
+legend {
+  font-family: 'Calibri';
+  font-weight: bold; }
+
 .flex {
   display: flex;
   width: 1100px;

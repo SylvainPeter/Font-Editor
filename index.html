@@ -15,7 +15,7 @@
         <hr>
         <header>
             <fieldset>
-                <legend>FONTE</legend>
+                <legend>POLICES</legend>
                 <select class="artists-menu" v-model="fontFamily">
                     <option value="" disabled selected>Artists</option>
                     <option value="David-Regular">David Bowie ⍟</option>
@@ -159,28 +159,30 @@
         </header>
         <div class="flex">
             <fieldset>
-                <legend>TOOLS</legend>
-                <button class="fas fa-not-equal" id="default" title="default" @click="isBold = false, isItalic = false, isUnderline = false, isShadow = false, isNegative = false, isSepia = false, textColor = 'black', backgroundColor = 'white'"></button>
-                <button class="fas fa-bold" id="bold" title="bold" @click="isBold = !isBold"></button>
-                <button class="fas fa-italic" id="italic" title="italic" @click="isItalic = !isItalic"></button>
-                <button class="fas fa-underline" id="underline" title="underline" @click="isUnderline = !isUnderline"></button>
-                <button class="fas fa-sun" id="shadow" title="shadow" @click="isShadow = !isShadow"></button>
-                <button class="fas fa-meh-blank" id="negative" title="negative" @click="isNegative = !isNegative"></button>
-                <button class="fas fa-camera-retro" id="sepia" title="sepia" @click="isSepia = !isSepia"></button>
+                <legend>OUTILS</legend>
+                <button class="fas fa-not-equal" id="default" title="défaut" @click="isBold = false, isItalic = false, isUnderline = false, isShadow = false, isNegative = false, isSepia = false, textColor = 'black', backgroundColor = 'white'"></button>
+                <button class="fas fa-bold" id="bold" title="gras" @click="isBold = !isBold"></button>
+                <button class="fas fa-italic" id="italic" title="italique" @click="isItalic = !isItalic"></button>
+                <button class="fas fa-underline" id="underline" title="souligné" @click="isUnderline = !isUnderline"></button>
+                <button class="fas fa-sun" id="shadow" title="ombre" @click="isShadow = !isShadow"></button>
+                <button class="fas fa-meh-blank" id="negative" title="négatif" @click="isNegative = !isNegative"></button>
+                <button class="fas fa-camera-retro" id="sepia" title="sépia" @click="isSepia = !isSepia"></button>
             </fieldset>
             <fieldset>
-                <legend>SIZE</legend>
+                <legend>TAILLE</legend>
                 <input type="range" min="1" max="8" step="0.25" v-model="fontSize">
             </fieldset>
             <fieldset>
-                <legend>COLOR</legend>
-                <input type="text" placeholder="Font color" v-model="textColor">
-                <input type="text" placeholder="Background color" v-model="backgroundColor">
+                <legend>COULEURS</legend>
+                <input type="text" title="entrer couleur du texte" placeholder="Couleur du texte" v-model="textColor">
+                <input type="text" title="entrer couleur du fond" placeholder="Couleur du fond" v-model="backgroundColor">
+                <button class="far fa-question-circle"></button>
             </fieldset>
             <br>
         </div>
         <textarea class="styled-text-area" :class="myClass" :style="{ fontSize: fontSize + 'rem', fontFamily: fontFamily, color: textColor, backgroundColor : backgroundColor}" v-model="textContent">{{ textContent }}</textarea>
-  
+  <br><br>
+  <p>Une fois terminé, presser la touche Imprec Syst pour faire une capture d'écran !</p>
     </div>
     <script src="https://kit.fontawesome.com/8cb3d4ca6a.js" async></script>
     <script src="js/main.js"></script>
