@@ -18,7 +18,7 @@
             <div class="col">
                 <fieldset class="border p-2">
                     <legend class="w-auto">FONTES</legend>
-                    <select class="artists-menu" title="Ecriture d'artistes célèbres !" v-model="fontFamily">
+                    <select class="artists-menu" title="Artists" v-model="fontFamily">
                         <option value="" disabled selected>Artists</option>
                         <option value="David-Regular">David Bowie ⍟</option>
                         <option value="John-Regular">John Lennon</option>
@@ -38,7 +38,7 @@
                         <option value="JF Ringmaster">JF Ringmaster ⍟</option>
                         <option value="Pentagon">Pentagon</option>
                     </select>
-                    <select class="horror-menu" v-model="fontFamily">
+                    <select class="horror-menu" title="Horror" v-model="fontFamily">
                         <option value="" selected disabled>Horror</option>
                         <optgroup label="Gothic">
                             <option value="CloisterBlack">Cloister Black</option>
@@ -71,7 +71,7 @@
                             <option value="VictorianOrn2">Victorian Ornements 2</option>
                         </optgroup>
                     </select>
-                    <select class="pirates-menu" v-model="fontFamily">
+                    <select class="pirates-menu" title="Pirates" v-model="fontFamily">
                         <option value="" selected disabled>Pirates</option>
                         <option value="Aquiline">Aquiline ⍟</option>
                         <option value="Blackpearl">Blackpearl ⍟</option>
@@ -79,7 +79,7 @@
                         <option value="Skulls">Skulls ⍟</option>
                         <option value="TreasureMap">Treasure Map ⍟</option>
                     </select>
-                    <select class="western-menu" v-model="fontFamily">
+                    <select class="western-menu" title="Western" v-model="fontFamily">
                         <option value="" selected disabled>Western</option>
                         <option value="Anderson Four">Anderson Four</option>
                         <option value="Durango Western">Durango Western ⍟</option>
@@ -96,7 +96,7 @@
                             <option value="Wild West Icons">Wild West Icons</option>
                         </optgroup>
                     </select>
-                    <select class="cinema-menu" v-model="fontFamily">
+                    <select class="cinema-menu" title="Cinema" v-model="fontFamily">
                         <option value="" selected disabled>Cinema</option>
                         <optgroup label="Art Deco">
                             <option value="Deco Pinstripe">Deco Pinstripe ⍟</option>
@@ -122,7 +122,7 @@
                             <option value="UndergroundNF">Underground NF</option>
                         </optgroup>
                     </select>
-                    <select class="other-menu" v-model="fontFamily">
+                    <select class="other-menu" title="Divers" v-model="fontFamily">
                         <option value="" selected disabled>Miscellaneous</option>
                         <optgroup label="Art Nouveau">
                             <option value="ArtNouveau">Art Nouveau ⍟</option>
