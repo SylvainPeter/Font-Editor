@@ -9,8 +9,8 @@
             isSepia: false,
             fontSize: 4,
             fontFamily: "",
-            textColor: "black",
-            backgroundColor: "white",
+            textColor: "",
+            backgroundColor: "",
             alphabet: false,
             textContent: "AZERTY azerty \r123456 &#?!$%"
         },
