@@ -104,6 +104,9 @@
 @font-face {
   font-family: 'Bloodlust';
   src: url("../fonts/horror/Bloodlust.ttf"); }
+  @font-face {
+    font-family: 'Buffied';
+    src: url("../fonts/horror/Buffied.ttf"); }
 @font-face {
   font-family: 'BurtonsDreams';
   src: url("../fonts/horror/BurtonsDreams.ttf"); }
@@ -113,6 +116,9 @@
 @font-face {
   font-family: 'CloisterBlack';
   src: url("../fonts/horror/CloisterBlack.ttf"); }
+  @font-face {
+    font-family: 'Creepy Blood';
+    src: url("../fonts/horror/Creepy Blood.ttf"); }
 @font-face {
   font-family: 'Damned';
   src: url("../fonts/horror/Damned.ttf"); }
@@ -149,6 +155,9 @@
 @font-face {
   font-family: 'Portculliard';
   src: url("../fonts/horror/Portculliard.ttf"); }
+  @font-face {
+    font-family: 'Rocky';
+    src: url("../fonts/horror/Rocky.ttf"); }
 @font-face {
   font-family: 'Rose Caps';
   src: url("../fonts/horror/Rose Caps.ttf"); }
